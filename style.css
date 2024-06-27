@@ -131,22 +131,46 @@ body {
     justify-content: center;
     align-items: center;
 }
-.lowercontent img {
-    width: 20%;
+
+.game-container img {
+    width: 70%;
     border-radius: 10%;
-    margin: 100px;
+    margin: 110px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
 .lowercontent img:hover {
-    width: 25%;
+    width: 90%;
 }
 
-.lowercontentimgdescript p {
-    text-align: center;
+.lowercontent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-title {
     font-size: 3rem;
     font-family: Jaini Purva;
+    text-align: center;
+    color: white;
+}
+
+.gametitles {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    font-family: Jaini Purva;
+    gap: rem;
 }
 .sidebar {
     flex-shrink: 0;
