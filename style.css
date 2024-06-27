@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin-top: 160px;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -25,27 +21,29 @@ body {
     flex: 1;
 }
 
+body {
+    padding-top: 120px;
+}
 .title {
-    padding-left: 400px;
     flex: 2.3;
     color: white;
     font-family: Jaini Purva;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title-txt {
-    font-size: 60px;
+    font-size: 50px;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
+
 }
 
 .logo-pic {
     width: 100px;
-    padding-left: 20px;
     cursor: pointer;
-}
-
-.buttons {
-    padding-top: 100px;
 }
 
 .buttons button, .buttons select {
@@ -55,7 +53,7 @@ body {
     padding: 10px;
     border-radius: 50px;
     font-family: Rubik Mono One;
-    font-size: 15px;
+    font-size: 10px;
     margin: 3px 3px;
     transition: all 0.15s ease-in-out;
 }
@@ -66,7 +64,6 @@ button:hover, select:hover, option:hover {
 }
 
 .header-image {
-    margin-top: 160px; /* Adjust based on header height */
     height: 400px;
     overflow: hidden;
     width: 100%;
@@ -81,78 +78,142 @@ button:hover, select:hover, option:hover {
 .main-body {
     display: flex;
     width: 100%;
-    min-height: 2000px;
-    background-color: black;
+    min-height: 100vh;
+    background-color: rgb(29, 28, 28);
     color: white;
-    border: solid white 1px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.main-body p {
-    color: white;
+.uppercontent img {
+    width: 18%;
+    border-radius: 10%;
+    margin: 100px;
+}
+
+.uppercontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midcontent {
+    display: flex;
+}
+
+.midcontent p {
+    font-size: 1.4rem;
+    font-family: Jaini Purva;
+    text-align: center;
+    padding: 3%;
+}
+
+.lowercontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lowercontent img {
+    width: 20%;
+    border-radius: 10%;
+    margin: 100px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.lowercontent img:hover {
+    width: 25%
 }
 
 .sidebar {
-    border: solid white 1px;
     flex-shrink: 0;
     width: 200px;
+    background-color: rgb(15, 15, 15);
 }
 
 .search-bar {
     width: 100%;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
+    padding: 12px; 
+    margin: 20px 0; 
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+.search-bar:focus {
+    outline: none; 
+    border-color: rgb(220, 53, 69); 
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25);
+}
+
 
 .sidebar-menu {
     list-style: none;
     padding: 0;
 }
 
-.sidebar-menu li {
-    margin-bottom: 10px; /* Reduced margin-bottom to bring buttons closer */
+.sidebar-menu li { /* Spacing between buttons*/
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: 1rem;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-menu li a:hover{
+    color: rgb(220, 53, 69);
+}
+
+.sidebar-menu li ul li a {
+    color: rgb(202, 197, 197)
 }
 
 .sidebar-menu button {
     width: 100%;
-    padding: 8px; /* Adjusted padding for buttons */
+    padding: 8px;
     border: none;
     border-radius: 5px;
     background-color: white;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
-    margin: 0; /* Removed margins between buttons */
+    margin: 0;
     font-family: Jaini Purva;
 }
 
-.sidebar-menu button:hover {
-    background-color: black;
-    color: white;
+.sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-logo img {
+    width: 100%;
 }
 
 .maincontent {
-    border: solid white 1px;
+
     width: calc(100% - 200px);
 }
 
 .footer {
     background-color: rgb(15, 15, 15);
-    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 0
 }
 
-.footer .logo, .address {
+.footer .logo, .address, .WebDesignerName{
     text-align: center;
 }
 
-.address-txt {
+.address-txt, .WebDesName {
     font-family: Jaini Purva;
     color: white;
-    margin-left: 20px;
 }
 
 .footer img {
