@@ -26,7 +26,7 @@ body {
 }
 .title {
     flex: 2.3;
-    color: white;
+    
     font-family: Jaini Purva;
     text-align: center;
     display: flex;
@@ -34,11 +34,12 @@ body {
     align-items: center;
 }
 
-.title-txt {
+.title-txt a {
+    color: white;
     font-size: 50px;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
-
+    text-decoration: none;
 }
 
 .logo-pic {
@@ -58,8 +59,17 @@ body {
     transition: all 0.15s ease-in-out;
 }
 
-button:hover, select:hover, option:hover {
+.buttons button a, buttons select option a {
+    text-decoration: none;
+    color: black;
+}
+
+.buttons button:hover, .buttons select:hover {
     background-color: black;
+    color: white;
+}
+
+.buttons button:hover a, .buttons select:hover option a {
     color: white;
 }
 
@@ -87,11 +97,18 @@ button:hover, select:hover, option:hover {
 }
 
 .uppercontent img {
-    width: 18%;
+    width: 20%;
     border-radius: 10%;
-    margin: 100px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.uppercontent p {
+    font-family: Jaini Purva;
+    font-size: 1.7rem;
+}
 .uppercontent {
     display: flex;
     justify-content: center;
@@ -119,13 +136,18 @@ button:hover, select:hover, option:hover {
     border-radius: 10%;
     margin: 100px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .lowercontent img:hover {
-    width: 25%
+    width: 25%;
 }
 
+.lowercontentimgdescript p {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Jaini Purva;
+}
 .sidebar {
     flex-shrink: 0;
     width: 200px;
@@ -134,16 +156,16 @@ button:hover, select:hover, option:hover {
 
 .search-bar {
     width: 100%;
-    padding: 12px; 
-    margin: 20px 0; 
+    padding: 12px;
+    margin: 20px 0;
     font-size: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .search-bar:focus {
-    outline: none; 
-    border-color: rgb(220, 53, 69); 
+    outline: none;
+    border-color: rgb(220, 53, 69);
     box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25);
 }
 
@@ -159,10 +181,11 @@ button:hover, select:hover, option:hover {
     font-size: 1rem;
 }
 
-.sidebar-menu li a {
+.sidebar-menu li a, .sidebar-menu li {
     text-decoration: none;
     color: rgb(255, 255, 255);
     transition: all 0.3s ease-in-out;
+    font-family: Jaini Purva;
 }
 
 .sidebar-menu li a:hover{
@@ -182,7 +205,6 @@ button:hover, select:hover, option:hover {
     cursor: pointer;
     transition: all 0.15s ease-in-out;
     margin: 0;
-    font-family: Jaini Purva;
 }
 
 .sidebar-logo {
@@ -196,7 +218,6 @@ button:hover, select:hover, option:hover {
 }
 
 .maincontent {
-
     width: calc(100% - 200px);
 }
 
