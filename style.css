@@ -152,6 +152,12 @@ body {
     align-items: center;
 }
 
+.lowercontentimgdescript {
+    text-align: center;
+    font-family: Jaini Purva;
+    font-size: 25px;
+}
+
 .game-container {
     display: flex;
     flex-direction: column;
