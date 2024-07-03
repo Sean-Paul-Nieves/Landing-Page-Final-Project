@@ -181,7 +181,7 @@ body {
 .sidebar {
     flex-shrink: 0;
     width: 200px;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(29, 28, 28);
 }
 
 .search-bar {
