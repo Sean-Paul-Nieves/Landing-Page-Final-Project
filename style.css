@@ -135,13 +135,7 @@ body {
 .game-container img {
     width: 70%;
     border-radius: 10%;
-    margin: 110px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.lowercontent img:hover {
-    width: 90%;
+    margin: 50px;
 }
 
 .lowercontent {
@@ -169,6 +163,7 @@ body {
     font-family: Jaini Purva;
     text-align: center;
     color: white;
+    margin-bottom: 50px;
 }
 
 .gametitles {
