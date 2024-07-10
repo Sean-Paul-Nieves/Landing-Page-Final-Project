@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 120px;
+}
+
+.header, .footer {
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo-pic, .footer img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.footer img {
+    width: 50px;
+}
+
+.footer .logo, .address, .WebDesignerName {
+    text-align: center;
+}
+
+.address-txt, .WebDesName {
+    font-family: Jaini Purva;
+    color: white;
+}
+
+.title {
+    flex: 2.3;
+    font-family: Jaini Purva;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-txt a {
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+}
+
+.buttons button, .buttons select {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: Rubik Mono One;
+    font-size: 10px;
+    margin: 3px 3px;
+    transition: all 0.15s ease-in-out;
+}
+
+.buttons button a, .buttons select option a {
+    text-decoration: none;
+    color: black;
+}
+
+.buttons button:hover, .buttons select:hover, .buttons button:hover a, .buttons select:hover option a {
+    background-color: black;
+    color: white;
+}
+
+.header-image {
+    height: 400px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-body {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(29, 28, 28);
+    color: white;
+}
+
+.sidebar {
+    flex-shrink: 0;
+    width: 200px;
+    background-color: rgb(29, 28, 28);
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: rgb(220, 53, 69);
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25);
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: 1rem;
+}
+
+.sidebar-menu li a, .sidebar-menu li {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+    font-family: Jaini Purva;
+}
+
+.sidebar-menu li a:hover {
+    color: rgb(220, 53, 69);
+}
+
+.sidebar-menu li ul li a {
+    color: rgb(202, 197, 197);
+}
+
+.sidebar-menu button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    margin: 0;
+}
+
+.sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-logo img {
+    width: 100%;
+}
+
+.maincontent {
+    width: calc(100% - 200px);
+}
+
+/*NOTE: ONLY THIS PART CHANGES*/
+
+.pagetitle, .subtitle {
+    text-align: center;
+    justify-content: center;
+}
+
+.pagetitle {
+    font-family: Jaini Purva;
+    font-size: 100px;
+    padding-top: 50px;
+}
+
+.underline {
+    border-bottom: 1px solid #ff9a9a;
+    width: 30%;
+    margin: auto;
+}
+
+.subtitle {
+    font-family: Jaini Purva;
+    font-size: 45px;
+    padding-top: 50px;
+    letter-spacing: 20px;
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5em;
+    margin-top: 50px;
+}
+.contain i {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 50px;
+    color: #ff9a9a;
+}
+.contain h2, .contain p{
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+}
+
+.address, .phone, .email {
+    text-align: center;
+}
+
+.contain h2 {
+    font-family: Rubik Mono One;
+    font-size: 30px;
+}
+
+.contain p {
+    font-family: Jaini Purva;
+    font-size: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .title {
+        padding-left: 0;
+    }
+
+    .title-txt {
+        font-size: 48px;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .buttons button, .buttons select {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .title-txt {
+        font-size: 40px;
+    }
+
+    .header-image {
+        height: 300px;
+    }
+
+    .main-body {
+        flex-direction: column;
+    }
+
+    .sidebar, .maincontent {
+        width: 100%;
+    }
+
+    .sidebar {
+        order: 2;
+    }
+
+    .maincontent {
+        order: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-txt {
+        font-size: 32px;
+    }
+
+    .buttons button, .buttons select {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .title {
+        padding-left: 0;
+    }
+
+    .title-txt {
+        font-size: 48px;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .buttons button, .buttons select {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .title-txt {
+        font-size: 40px;
+    }
+
+    .header-image {
+        height: 300px;
+    }
+
+    .main-body {
+        flex-direction: column;
+    }
+
+    .sidebar, .maincontent {
+        width: 100%;
+    }
+
+    .sidebar {
+        order: 2;
+    }
+
+    .maincontent {
+        order: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-txt {
+        font-size: 32px;
+    }
+
+    .buttons button, .buttons select {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
